@@ -1,0 +1,25 @@
+# batch convert all .pptx files in a directory to .pdf  
+# files and crop them. 
+# 
+# to be used in conjunction with ppt.vbs, which converts
+# a .pptx file into a pdf. 
+#
+# usage: copy this file and ppt.vbs to figs/ and run make
+# there
+#
+# environment: win 10 cmd
+#
+
+pptobjects := $(patsubst %.pptx,%.pdf,$(wildcard *.pptx))
+current_dir  := $(shell cd)
+
+all : $(docobjects) $(pptobjects)
+
+clean:
+	rm -rf $(docobjects) $(pptobjects)
+
+%.pdf.uncrop : %.pptx
+	"c:\Windows\SysWOW64\cscript.exe" ppt.vbs "$(current_dir)\$^" "$(current_dir)\$@"
+
+%.pdf: %.pdf.uncrop
+	pdfcrop $^ $@

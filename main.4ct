@@ -1,0 +1,61 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{2}\relax 
+\doTocEntry\tocsection{1.}{\csname a:TocLink\endcsname{1}{x1-20001.}{QQ2-1-2}{Introduction}}{3}\relax 
+\doTocEntry\tocsubsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Handbook goals}}{4}\relax 
+\doTocEntry\tocsubsection{1.2}{\csname a:TocLink\endcsname{1}{x1-40001.2}{QQ2-1-4}{Graduate degrees}}{4}\relax 
+\doTocEntry\tocsubsection{1.3}{\csname a:TocLink\endcsname{1}{x1-50001.3}{QQ2-1-5}{Contacts}}{4}\relax 
+\doTocEntry\tocsubsection{1.4}{\csname a:TocLink\endcsname{1}{x1-60001.4}{QQ2-1-6}{Policy Exceptions}}{5}\relax 
+\doTocEntry\tocsection{2.}{\csname a:TocLink\endcsname{1}{x1-70002.}{QQ2-1-7}{Master's Degrees}}{6}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-80002.1}{QQ2-1-8}{Master's Degree \& Committee Requirements}}{6}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-90002.2}{QQ2-1-9}{Master Teaching Assistant Positions (MTA)}}{7}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{1}{x1-100002.3}{QQ2-1-10}{En Route Master's Degree}}{7}\relax 
+\doTocEntry\tocsubsection{2.4}{\csname a:TocLink\endcsname{1}{x1-110002.4}{QQ2-1-11}{Typical Timeline}}{7}\relax 
+\doTocEntry\tocsection{3.}{\csname a:TocLink\endcsname{1}{x1-120003.}{QQ2-1-12}{PhD Degree}}{9}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-130003.1}{QQ2-1-13}{Graduate Record Links}}{9}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{1}{x1-140003.2}{QQ2-1-14}{PhD Coursework}}{11}\relax 
+\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{1}{x1-150003.3}{QQ2-1-15}{PhD Transfer Credit }}{11}\relax 
+\doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{1}{x1-160003.4}{QQ2-1-16}{PhD Student Assessment Policy and Process}}{11}\relax 
+\doTocEntry\tocsubsubsection{3.4.1}{\csname a:TocLink\endcsname{1}{x1-170003.4.1}{QQ2-1-17}{Goal}}{11}\relax 
+\doTocEntry\tocsubsubsection{3.4.2}{\csname a:TocLink\endcsname{1}{x1-180003.4.2}{QQ2-1-18}{Process Overview}}{12}\relax 
+\doTocEntry\tocsubsubsection{3.4.3}{\csname a:TocLink\endcsname{1}{x1-190003.4.3}{QQ2-1-19}{PhD Student Assessment}}{12}\relax 
+\doTocEntry\tocsubsubsection{3.4.4}{\csname a:TocLink\endcsname{1}{x1-200003.4.4}{QQ2-1-20}{Assessments of Concern}}{12}\relax 
+\doTocEntry\tocsubsubsection{3.4.5}{\csname a:TocLink\endcsname{1}{x1-210003.4.5}{QQ2-1-21}{Confidential Information}}{13}\relax 
+\doTocEntry\tocsubsection{3.5}{\csname a:TocLink\endcsname{1}{x1-220003.5}{QQ2-1-22}{First-Year PhD Rotation Program}}{13}\relax 
+\doTocEntry\tocsubsection{3.6}{\csname a:TocLink\endcsname{1}{x1-230003.6}{QQ2-1-23}{PhD Qualifying Examination}}{15}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-230011}{}{\ignorespaces Qualifying Examination Process}}{figure}\relax 
+\doTocEntry\tocsubsubsection{3.6.1}{\csname a:TocLink\endcsname{1}{x1-240003.6.1}{QQ2-1-25}{Qualifying Examination Committee}}{18}\relax 
+\doTocEntry\tocsubsubsection{3.6.2}{\csname a:TocLink\endcsname{1}{x1-250003.6.2}{QQ2-1-26}{Qualifying Examination \relax $\o:@@underline: {\hbox {Breadth}}\mathsurround \z@ $\relax  Requirement}}{18}\relax 
+\doTocEntry\tocsubsubsection{3.6.3}{\csname a:TocLink\endcsname{1}{x1-260003.6.3}{QQ2-1-27}{Qualifying Examination \relax $\o:@@underline: {\hbox {Depth}}\mathsurround \z@ $\relax  Requirement}}{18}\relax 
+\doTocEntry\tocparagraph{3.6.3.1}{\csname a:TocLink\endcsname{1}{x1-270003.6.3.1}{QQ2-1-28}{Qualifying Examination Depth Proposal}}{19}\relax 
+\doTocEntry\tocsubparagraph{3.6.3.1.1}{\csname a:TocLink\endcsname{1}{x1-280003.6.3.1.1}{QQ2-1-29}{Qualifying Examination Proposal Document}}{19}\relax 
+\doTocEntry\tocsubparagraph{3.6.3.1.2}{\csname a:TocLink\endcsname{1}{x1-290003.6.3.1.2}{QQ2-1-30}{Qualifying Examination Proposal Outcomes}}{21}\relax 
+\doTocEntry\tocparagraph{3.6.3.2}{\csname a:TocLink\endcsname{1}{x1-300003.6.3.2}{QQ2-1-31}{Qualifying Examination Depth Defense}}{21}\relax 
+\doTocEntry\tocsubparagraph{3.6.3.2.1}{\csname a:TocLink\endcsname{1}{x1-310003.6.3.2.1}{QQ2-1-32}{Qualifying Examination Depth Defense Report}}{21}\relax 
+\doTocEntry\tocsubparagraph{3.6.3.2.2}{\csname a:TocLink\endcsname{1}{x1-320003.6.3.2.2}{QQ2-1-33}{Qualifying Examination Depth Defense Presentation}}{21}\relax 
+\doTocEntry\tocsubsubsection{3.6.4}{\csname a:TocLink\endcsname{1}{x1-330003.6.4}{QQ2-1-34}{Qualifying Examination Depth Outcomes}}{22}\relax 
+\doTocEntry\tocsubsection{3.7}{\csname a:TocLink\endcsname{1}{x1-340003.7}{QQ2-1-35}{PhD Committees}}{22}\relax 
+\doTocEntry\tocsubsection{3.8}{\csname a:TocLink\endcsname{1}{x1-350003.8}{QQ2-1-36}{PhD Proposal}}{23}\relax 
+\doTocEntry\tocsubsubsection{3.8.1}{\csname a:TocLink\endcsname{1}{x1-360003.8.1}{QQ2-1-37}{PhD Proposal Document}}{23}\relax 
+\doTocEntry\tocsubsubsection{3.8.2}{\csname a:TocLink\endcsname{1}{x1-370003.8.2}{QQ2-1-38}{PhD Proposal Presentation}}{24}\relax 
+\doTocEntry\tocsubsubsection{3.8.3}{\csname a:TocLink\endcsname{1}{x1-380003.8.3}{QQ2-1-39}{PhD Proposal Outcomes}}{24}\relax 
+\doTocEntry\tocsubsection{3.9}{\csname a:TocLink\endcsname{1}{x1-390003.9}{QQ2-1-40}{PhD Dissertation}}{25}\relax 
+\doTocEntry\tocsubsection{3.10}{\csname a:TocLink\endcsname{1}{x1-400003.10}{QQ2-1-41}{PhD Defense}}{26}\relax 
+\doTocEntry\tocsubsubsection{3.10.1}{\csname a:TocLink\endcsname{1}{x1-410003.10.1}{QQ2-1-42}{PhD Defense Outcomes}}{27}\relax 
+\doTocEntry\tocsubsection{3.11}{\csname a:TocLink\endcsname{1}{x1-420003.11}{QQ2-1-43}{Typical Timeline}}{28}\relax 
+\doTocEntry\tocsubsection{3.12}{\csname a:TocLink\endcsname{1}{x1-430003.12}{QQ2-1-44}{First-Year Fellowship, GRAs and GTAs}}{30}\relax 
+\doTocEntry\tocsubsubsection{3.12.1}{\csname a:TocLink\endcsname{1}{x1-440003.12.1}{QQ2-1-45}{First-Year Fellowship }}{30}\relax 
+\doTocEntry\tocsubsubsection{3.12.2}{\csname a:TocLink\endcsname{1}{x1-450003.12.2}{QQ2-1-46}{Graduate Teaching Assistant (GTA) Responsibilities}}{30}\relax 
+\doTocEntry\tocsubsubsection{3.12.3}{\csname a:TocLink\endcsname{1}{x1-460003.12.3}{QQ2-1-47}{Graduate Research Assistant (GRA) Responsibilities}}{31}\relax 
+\doTocEntry\tocsubsubsection{3.12.4}{\csname a:TocLink\endcsname{1}{x1-470003.12.4}{QQ2-1-48}{Summer Support}}{32}\relax 
+\doTocEntry\tocsection{4.}{\csname a:TocLink\endcsname{1}{x1-480004.}{QQ2-1-49}{International Students}}{32}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-490004.1}{QQ2-1-50}{Full-Time Status}}{32}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-500004.2}{QQ2-1-51}{English Language Proficiency Assessments (Written and Oral)}}{32}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-510004.3}{QQ2-1-52}{Curricular Practical Training (CPT)}}{33}\relax 
+\doTocEntry\tocsubsection{4.4}{\csname a:TocLink\endcsname{1}{x1-520004.4}{QQ2-1-53}{Optional Practical Training (OPT)}}{33}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-53000}{QQ2-1-54}{Appendices}}{34}\relax 
+\doTocEntry\tocsection{A}{\csname a:TocLink\endcsname{1}{x1-54000A}{QQ2-1-55}{Useful Forms and Resources}}{34}\relax 
+\doTocEntry\tocsection{B}{\csname a:TocLink\endcsname{1}{x1-55000B}{QQ2-1-56}{CS Policy on Graduate Student Leave}}{36}\relax 
+\doTocEntry\tocsubsection{B1}{\csname a:TocLink\endcsname{1}{x1-56000B1}{QQ2-1-57}{Student Leaves}}{36}\relax 
+\doTocEntry\tocsubsection{B2}{\csname a:TocLink\endcsname{1}{x1-57000B2}{QQ2-1-58}{Significant Life Events}}{37}\relax 
+\doTocEntry\tocsection{C}{\csname a:TocLink\endcsname{1}{x1-58000C}{QQ2-1-59}{CS Policy on PhD Program Termination}}{38}\relax 
+\par 

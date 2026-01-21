@@ -1,0 +1,192 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage[margin=1in]{geometry} % set page margins
+
+\usepackage{lineno} % for line numbers
+\renewcommand\linenumberfont{\normalfont\bfseries\small\color{gray}} % set line numbers color to gray
+
+\usepackage{url}
+\usepackage{soul}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage{enumitem} % include nosep for lists
+
+
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+% \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+
+\urlstyle{same} % disable monospaced font for URLs
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, fit, calc}
+
+\tikzset{
+    startstop/.style={rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=gray!20},
+    process/.style={rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!10},
+    group/.style={draw=black, thick, dashed, inner sep=0.5cm, fit=#1},
+    arrow/.style={thick,->,>=stealth}
+}
+
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+% show header/footer
+\usepackage{fancyhdr}
+
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{cleveref}
+
+\usepackage{makecell}
+\renewcommand{\cellalign}{tl}
+
+\usepackage[toc,page]{appendix}
+
+%\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\setcounter{secnumdepth}{5}
+
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesection\arabic{subsection}.\arabic{subsubsection}}
+
+\usepackage{titlesec}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\subparagraph}{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\crefname{paragraph}{section}{sections}
+\crefname{subparagraph}{section}{sections}
+
+\author{}
+\date{}
+
+% ---- commands ---- % 
+\newcommand\fxlNote[1]{\sethlcolor{yellow} \hl{#1}} % highlighted notes of other colors.
+
+% define revision here
+\newcommand\revision{Spring 2025}
+
+% ---- commands ---- % 
+
+\begin{document}
+
+\begin{center}
+
+  \textit{\includegraphics[width=1.55in,height=0.82119in]{figs/image1.png}}
+  
+  \Large{\textbf{COMPUTER SCIENCE GRADUATE STUDENT HANDBOOK}}
+  
+  \includegraphics[width=0.83in,height=0.52377in]{figs/image2.png}
+
+  \textbf{Revision: \revision{}}
+
+\textnormal{Department of Computer Science}
+
+\textnormal{School of Engineering and Applied Science}
+
+\textnormal{Rice Hall and Olsson Hall}
+
+\textnormal{University of Virginia}
+
+\textnormal{Charlottesville, VA 22904}
+
+\end{center}
+
+Last update: \today
+
+\input{changelog}
+
+
+\pagebreak
+
+\tableofcontents
+
+\linenumbers 
+
+\fancyhf{}  % Clear default header/footer
+\pagestyle{fancy}
+\fancyhead[C]{UVA CS Graduate Handbook. Revision: \revision{} (Last update: \today)}  % center-aligned date in header
+% \fancyfoot[C]{UVA CS Graduate Handbook. Revision: \revision{} (\today)}  % center-aligned date in header
+% \fancyfoot[R]{Last update: \today}
+\fancyfoot[C]{\thepage}  % center-aligned page number in footer
+
+\input{links}
+
+\input{intro}
+\input{ms}
+\input{phd}
+\input{intl}
+\pagebreak
+\begin{appendices}
+\input{appendix}
+\end{appendices}
+
+
+\end{document}
