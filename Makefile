@@ -10,3 +10,4 @@ uvacs_gradhandbook.pdf: $(TEX_SOURCES)
 .PHONY: publish
 publish: uvacs_gradhandbook.pdf
 	cp uvacs_gradhandbook.pdf pdfs/uvacs_gradhandbook_$(shell date '+%Y-%m-%d').pdf
+	cp uvacs_gradhandbook.pdf pdfs/uvacs_gradhandbook-current.pdf
