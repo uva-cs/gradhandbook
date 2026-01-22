@@ -10,3 +10,8 @@ Program handbook at UVA.
    python script and make it executable on your system. I put it in
    `/Users/username/.local/bin/`.
 3. Run `make`.
+
+## Creating a new version
+
+1. Ensure the edition is updated in the latex source.
+2. Run `make publish`.
