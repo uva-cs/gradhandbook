@@ -11,3 +11,8 @@ uvacs_gradhandbook.pdf: $(TEX_SOURCES)
 publish: uvacs_gradhandbook.pdf
 	cp uvacs_gradhandbook.pdf pdfs/uvacs_gradhandbook_$(shell date '+%Y-%m-%d').pdf
 	cp uvacs_gradhandbook.pdf pdfs/uvacs_gradhandbook-current.pdf
+
+.PHONY: clean
+clean:
+	rm -rf latex.out
+	rm uvacs_gradhandbook.pdf
