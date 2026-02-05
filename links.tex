@@ -9,11 +9,23 @@
 %%% - BC  = Breadth Courses
 %%% - VL  = Vacation and Leave
 
-\def \GRcurrentyear{2025-2026}
-\def \GRMS{\GRtwentyfiveMS}
-\def \GRMCS{\GRtwentyfiveMCS}
-\def \GRPHD{\GRtwentyfivePHD}
+%%% HANDBOOK MAINTENANCE
+%%%
+%%% Every year after the new graduate record is released the new links need
+%%% to be added and the new year needs to be added to the tables.
 
+% Define to be the name of the current active year.
+\def \currentyear{twentyfive}
+
+\def \yearstoshow{twentyfive,twentyfour,twentythree}
+
+% These get automatically populated when the \currentyear is updated.
+\def \GRcurrentyear{\csname\currentyear\endcsname}
+\def \GRMS{\csname GR\currentyear MS\endcsname}
+\def \GRMCS{\csname GR\currentyear MCS\endcsname}
+\def \GRPHD{\csname GR\currentyear PHD\endcsname}
+
+\def \twentyfive{2025-2026}
 \def \GRtwentyfiveMS{https://records.ureg.virginia.edu/preview_program.php?catoid=68\&poid=10568}
 \def \GRtwentyfiveCR{https://records.ureg.virginia.edu/content.php?catoid=68\&navoid=6125\#committee-requirements}
 \def \GRtwentyfiveMCS{https://records.ureg.virginia.edu/preview_program.php?catoid=68\&poid=10567}
@@ -21,4 +33,26 @@
 \def \GRtwentyfiveTC{https://records.ureg.virginia.edu/content.php?catoid=68\&navoid=6125\#transfer-credit}
 \def \GRtwentyfiveBC{https://records.ureg.virginia.edu/preview_program.php?catoid=68\&poid=10569}
 \def \GRtwentyfiveVL{https://records.ureg.virginia.edu/content.php?catoid=68\&navoid=6125\#vacation-and-leave}
+
+\def \twentyfour{2024-2025}
+\def \GRtwentyfourMS{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9191}
+\def \GRtwentyfourCR{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#committee-requirements}
+\def \GRtwentyfourMCS{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9190}
+\def \GRtwentyfourPHD{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9192}
+\def \GRtwentyfourTC{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#transfer-credit}
+\def \GRtwentyfourBC{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9192}
+\def \GRtwentyfourVL{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#vacation-and-leave}
+
+\def \twentythree{2023-2024}
+\def \GRtwentythreeMS{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8695}
+\def \GRtwentythreeCR{https://records.ureg.virginia.edu/content.php?catoid=57\&navoid=5188\#committee-requirements}
+\def \GRtwentythreeMCS{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8694}
+\def \GRtwentythreePHD{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8696}
+\def \GRtwentythreeTC{https://records.ureg.virginia.edu/content.php?catoid=57\&navoid=5188\#transfer-credit}
+\def \GRtwentythreeBC{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8696}
+\def \GRtwentythreeVL{https://records.ureg.virginia.edu/content.php?catoid=57\&navoid=5188\#vacation-and-leave}
+
+
+
+
 

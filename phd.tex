@@ -37,38 +37,28 @@ The following links lead to the relevant pages of the Graduate Record, which
 outlines UVA's official procedures and policies. The Graduate Record is updated
 annually, potentially including minor adjustments.
 
-\textbf{2025-2026}
+%%%
+%%% Loop through variables setup in links.tex to generate tables linking
+%%% to the Graduate Record.
+%%%
 
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
+\newif\ifFirstIteration
+\FirstIterationtrue % Initialize the flag to true
+\foreach \year in \yearstoshow {
+    \textbf{\csname\year\endcsname} \ifFirstIteration \global\FirstIterationfalse \else (archived) \fi
+
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
         \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{\GRtwentyfivePHD}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Transfer Credit}                    & \makecell{\href{\GRtwentyfiveTC}{Transfer Credit}}          \\ \hline
-        \makecell{Breadth Courses}                    & \makecell{\href{\GRtwentyfiveBC}{Computer Science, Ph.D.}}  \\ \hline
-        \makecell{Committee Requirements}             & \makecell{\href{\GRtwentyfiveCR}{Committee Requirements}}   \\ \hline
-\end{tabularx}
+        \makecell{Coursework \& Program Requirements} & \makecell{\href{\csname GR\year PHD\endcsname}{Computer Science, Ph.D.}} \\ \hline
+        \makecell{Transfer Credit}                    & \makecell{\href{\csname GR\year TC\endcsname}{Transfer Credit}}          \\ \hline
+        \makecell{Breadth Courses}                    & \makecell{\href{\csname GR\year BC\endcsname}{Computer Science, Ph.D.}}  \\ \hline
+        \makecell{Committee Requirements}             & \makecell{\href{\csname GR\year CR\endcsname}{Committee Requirements}}   \\ \hline
+    \end{tabularx}
 
+}
 
-\textbf{2024-2025} (archived)
-
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9192}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Transfer Credit}                    & \makecell{\href{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#transfer-credit}{Transfer Credit}} \\ \hline
-        \makecell{Breadth Courses}                    & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9192}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Committee Requirements}             & \makecell{\href{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#committee-requirements}{Committee Requirements}} \\ \hline
-\end{tabularx}
-
-\textbf{2023-2024} (archived)
-
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8696}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Breadth Courses}                    & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8696}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Committee Requirements}             & \makecell{\href{https://records.ureg.virginia.edu/content.php?catoid=57\&navoid=5188\#committee-requirements}{Committee Requirements}} \\ \hline
-\end{tabularx}
+%%% Manually do older years for now.
 
 \textbf{2022-2023} (archived)
 

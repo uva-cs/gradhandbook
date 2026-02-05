@@ -35,11 +35,72 @@ degree requirements for the Master's Degrees in Computer Science:
     \hline
     \textbf{Graduate Record} & \textbf{MS Page Link} & \textbf{MCS Page Link} \\ \hline
     2025-2026 & \makecell{\href{\GRtwentyfiveMS}{Computer Science, M.S.} \\ \href{\GRtwentyfiveCR}{Committee Requirements}} & \href{\GRtwentyfiveMCS}{Computer Science, M.C.S.} \\ \hline
-    2024-2025 (archived) & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9191}{Computer Science, M.S.} \\ \href{https://records.ureg.virginia.edu/content.php?catoid=62\&navoid=5418\#committee-requirements}{Committee Requirements}} & \href{https://records.ureg.virginia.edu/preview_program.php?catoid=62\&poid=9190}{Computer Science, M.C.S.} \\ \hline
-    2023-2024 (archived) & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8695}{Computer Science, M.S.} \\ \href{https://records.ureg.virginia.edu/content.php?catoid=57\&navoid=5188\#committee-requirements}{Committee Requirements}} & \href{https://records.ureg.virginia.edu/preview_program.php?catoid=57\&poid=8694}{Computer Science, M.C.S.} \\ \hline
+    2024-2025 (archived) & \makecell{\href{\GRtwentyfourMS}{Computer Science, M.S.} \\ \href{\GRtwentyfourCR}{Committee Requirements}} & \href{\GRtwentyfourMCS}{Computer Science, M.C.S.} \\ \hline
+    2023-2024 (archived) & \makecell{\href{\GRtwentythreeMS}{Computer Science, M.S.} \\ \href{\GRtwentythreeCR}{Committee Requirements}} & \href{\GRtwentythreeMCS}{Computer Science, M.C.S.} \\ \hline
 \end{tabularx}
 
-% fxl: mar 2025. from jwd. indeed cs faculty do not have to be majority, but it is the way 
+
+% % \newcommand{\myTable}[1]{%
+% %     \def\tabledata{}% reset \tabledata
+% %     \foreach \lhs/\rhs in {#1} {% build table data from #1
+% %         \protected@xappto\tabledata{\textbf{\lhs} & \rhs \\}
+% %     }%
+% %     \begin{tabular}{p{0.35\textwidth}|p{0.65\textwidth}}
+% %         \hline
+% %         Headline 1 & Headline 2 \\ \hline
+% %         \tabledata \hline
+% %     \end{tabular}
+% % }
+
+% \newif\ifFirstIteration
+% \FirstIterationtrue % Initialize the flag to true
+% \newcommand*\mytablecontents{}
+% \foreach \year in \yearstoshow {
+
+%     % \gappto\mytablecontents{\csname\year\endcsname \ifFirstIteration \global\FirstIterationfalse \else (archived) \fi & \makecell{\href{\csname GR\year MS\endcsname}{Computer Science, M.S.} \\ \href{\csname GR\year CR\endcsname}{Committee Requirements}} & \href{\csname GR\year MCS\endcsname}{Computer Science, M.C.S.}}
+%     \gappto\mytablecontents{24 &}
+%     \gappto\mytablecontents{\makecell{\href{\csname GR\year MS\endcsname}{Computer Science, M.S.}}}
+%     \gappto\mytablecontents{&}
+%     \gappto\mytablecontents{\href{\csname GR\year MCS\endcsname}{Computer Science, M.C.S.}}
+%     % \gappto\mytablecontents{24 & 54 & \href{ok}{Computer Science, M.C.S.}}
+%     % \xappto\mytablecontents{24 & 54 & huh}
+
+
+
+%     % \xappto\mytablecontents{A & B & \year}
+%     \gappto\mytablecontents{\\ \hline}
+% }
+
+
+% % \def \tdata{
+% %   \foreach \year in \yearstoshow {
+% %       % \textbf{\csname\year\endcsname}
+
+% %       A & B & \year \\ \hline
+
+
+
+
+
+
+% %   }
+% % }
+
+
+
+
+% \begin{tabularx}{\textwidth}{|l|l|X|}
+%     \hline
+%     \textbf{Graduate Record} & \textbf{MS Page Link} & \textbf{MCS Page Link} \\ \hline
+
+%     \mytablecontents
+
+% \end{tabularx}
+
+
+
+
+% fxl: mar 2025. from jwd. indeed cs faculty do not have to be majority, but it is the way
 The MS thesis committee must include the following.
 \begin{itemize}
   \item the thesis advisor, who must be CS faculty and supervises the student for CS 8999 (Thesis);
@@ -62,7 +123,7 @@ MTAs typically help a professor by grading assignments and exams,
 holding office hours, etc. It is UVA policy that all graduate TAs whose
 first language is other than English must first take the SPEAK test to
 assess their fluency with oral English and to determine the types of
-actions they may perform. 
+actions they may perform.
 See Section~\ref{english-language-proficiency-assessments-written-and-oral}.
 
 \hypertarget{en-route-masters-degree}{%
@@ -103,7 +164,7 @@ of CS 8999 (Thesis) with their thesis advisor.
 {Summer:} Students typically are away on internships, potentially
 facilitated
 \href{https://engineering.virginia.edu/about/offices/center-engineering-career-development}{through
-the SEAS \emph{Center for Engineering Career Development}}. 
+the SEAS \emph{Center for Engineering Career Development}}.
 International students use the Curricular Practical Training program (CPT) organized
 by the UVA \emph{International Studies Office} (ISO) and the
 \emph{International Students and Scholars Program} (ISSP).
@@ -129,11 +190,11 @@ the end of Master's studies:
 \item
 If a Master's candidate decides to defer graduation for another semester, they should seek advice and assistance from the MGPD.
 \item
-  If a Master's student wishes to pursue a PhD in UVA CS: 
+  If a Master's student wishes to pursue a PhD in UVA CS:
   (1) the student should first identify a CS professor and then confirm that he or she is willing to fund and advise the student's PhD research;
   (2) With a confirmed advisor, the student should then consult with the Chair of the
   CS Graduate Admissions Committee (see Section 1) to determine the
-  necessary forms and procedures used to apply to our PhD program. 
+  necessary forms and procedures used to apply to our PhD program.
   (3) Once application forms have been filed with the Graduate Coordinator, the CS Graduate Admissions
   Committee will determine whether to offer admission to the PhD
   program.
