@@ -31,71 +31,37 @@ Please refer to the University Graduate Record for
 degree requirements for the Master's Degrees in Computer Science:
 
 
+% Magic macro to enable for loops to generate table rows.
+% https://tex.stackexchange.com/a/630997/49699
+\makeatletter
+    \newcommand*{\@MyTempTableTokens}{}%
+    \newtoks\@tabtoks
+    %%% assignments to \@tabtoks must be global, because they are done in \foreach
+    \newcommand\AddTableTokens[1]{\global\@tabtoks\expandafter{\the\@tabtoks#1}}
+    \newcommand\eAddTableTokens[1]{%
+        %% https://tex.stackexchange.com/a/175573/4301
+        \protected@edef\@MyTempTableTokens{#1}%
+        \expandafter\AddTableTokens\expandafter{\@MyTempTableTokens}%
+    }
+    %%% variable should always be operated on either always locally or always globally
+    \newcommand*\ResetTableTokens{\global\@tabtoks{}}
+    \newcommand*\PrintTableTokens{\the\@tabtoks}
+\makeatother
+
+
+% Generate rows of Graduate Record links per academic year.
+\ResetTableTokens%
+\foreach \year in \yearstoshow {%
+    \eAddTableTokens{\csname\year\endcsname & \noexpand\makecell{\href{\csname GR\year MS\endcsname}{Computer Science, M.S.} \\ \href{\csname GR\year CR\endcsname}{Committee Requirements}} & \href{\csname GR\year MCS\endcsname}{Computer Science, M.C.S.} \\ \noexpand\hline}
+}%
+
+% Update this table based on what is defined in link.tex.
 \begin{tabularx}{\textwidth}{|l|l|X|}
     \hline
     \textbf{Graduate Record} & \textbf{MS Page Link} & \textbf{MCS Page Link} \\ \hline
-    2025-2026 & \makecell{\href{\GRtwentyfiveMS}{Computer Science, M.S.} \\ \href{\GRtwentyfiveCR}{Committee Requirements}} & \href{\GRtwentyfiveMCS}{Computer Science, M.C.S.} \\ \hline
-    2024-2025 (archived) & \makecell{\href{\GRtwentyfourMS}{Computer Science, M.S.} \\ \href{\GRtwentyfourCR}{Committee Requirements}} & \href{\GRtwentyfourMCS}{Computer Science, M.C.S.} \\ \hline
-    2023-2024 (archived) & \makecell{\href{\GRtwentythreeMS}{Computer Science, M.S.} \\ \href{\GRtwentythreeCR}{Committee Requirements}} & \href{\GRtwentythreeMCS}{Computer Science, M.C.S.} \\ \hline
+    \PrintTableTokens
 \end{tabularx}
 
-
-% % \newcommand{\myTable}[1]{%
-% %     \def\tabledata{}% reset \tabledata
-% %     \foreach \lhs/\rhs in {#1} {% build table data from #1
-% %         \protected@xappto\tabledata{\textbf{\lhs} & \rhs \\}
-% %     }%
-% %     \begin{tabular}{p{0.35\textwidth}|p{0.65\textwidth}}
-% %         \hline
-% %         Headline 1 & Headline 2 \\ \hline
-% %         \tabledata \hline
-% %     \end{tabular}
-% % }
-
-% \newif\ifFirstIteration
-% \FirstIterationtrue % Initialize the flag to true
-% \newcommand*\mytablecontents{}
-% \foreach \year in \yearstoshow {
-
-%     % \gappto\mytablecontents{\csname\year\endcsname \ifFirstIteration \global\FirstIterationfalse \else (archived) \fi & \makecell{\href{\csname GR\year MS\endcsname}{Computer Science, M.S.} \\ \href{\csname GR\year CR\endcsname}{Committee Requirements}} & \href{\csname GR\year MCS\endcsname}{Computer Science, M.C.S.}}
-%     \gappto\mytablecontents{24 &}
-%     \gappto\mytablecontents{\makecell{\href{\csname GR\year MS\endcsname}{Computer Science, M.S.}}}
-%     \gappto\mytablecontents{&}
-%     \gappto\mytablecontents{\href{\csname GR\year MCS\endcsname}{Computer Science, M.C.S.}}
-%     % \gappto\mytablecontents{24 & 54 & \href{ok}{Computer Science, M.C.S.}}
-%     % \xappto\mytablecontents{24 & 54 & huh}
-
-
-
-%     % \xappto\mytablecontents{A & B & \year}
-%     \gappto\mytablecontents{\\ \hline}
-% }
-
-
-% % \def \tdata{
-% %   \foreach \year in \yearstoshow {
-% %       % \textbf{\csname\year\endcsname}
-
-% %       A & B & \year \\ \hline
-
-
-
-
-
-
-% %   }
-% % }
-
-
-
-
-% \begin{tabularx}{\textwidth}{|l|l|X|}
-%     \hline
-%     \textbf{Graduate Record} & \textbf{MS Page Link} & \textbf{MCS Page Link} \\ \hline
-
-%     \mytablecontents
-
-% \end{tabularx}
 
 
 
