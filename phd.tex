@@ -44,52 +44,44 @@ annually, potentially including minor adjustments.
 
 \newif\ifFirstIteration
 \FirstIterationtrue % Initialize the flag to true
+\ResetTableTokens%
 \foreach \year in \yearstoshow {
-    \textbf{\csname\year\endcsname} \ifFirstIteration \global\FirstIterationfalse \else (archived) \fi
-
-    \begin{tabularx}{\textwidth}{|l|X|}
-        \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{\csname GR\year PHD\endcsname}{Computer Science, Ph.D.}} \\ \hline
-        \makecell{Transfer Credit}                    & \makecell{\href{\csname GR\year TC\endcsname}{Transfer Credit}}          \\ \hline
-        \makecell{Breadth Courses}                    & \makecell{\href{\csname GR\year BC\endcsname}{Computer Science, Ph.D.}}  \\ \hline
-        \makecell{Committee Requirements}             & \makecell{\href{\csname GR\year CR\endcsname}{Committee Requirements}}   \\ \hline
-    \end{tabularx}
-
+    \ifFirstIteration
+        \eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{\csname\year\endcsname}} \\ }
+        \global\FirstIterationfalse
+    \else
+        \eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{\csname\year\endcsname} (archived) } \\ }
+    \fi
+    \eAddTableTokens{\noexpand\makecell{Coursework \& Program Requirements} & \noexpand\makecell{\href{\csname GR\year PHD\endcsname}{Computer Science, Ph.D.}} \\}
+    \eAddTableTokens{\noexpand\makecell{Transfer Credit} & \noexpand\makecell{\href{\csname GR\year TC\endcsname}{Transfer Credit}} \\}
+    \eAddTableTokens{\noexpand\makecell{Breadth Courses} & \noexpand\makecell{\href{\csname GR\year BC\endcsname}{Computer Science, Ph.D.}}  \\}
+    \eAddTableTokens{\noexpand\makecell{Committee Requirements} & \noexpand\makecell{\href{\csname GR\year CR\endcsname}{Committee Requirements}} \\ \noexpand\hline}
 }
 
 %%% Manually do older years for now.
 
-\textbf{2022-2023} (archived)
+% 2022
+\eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{2022-2023} (archived) } \\ }
+\eAddTableTokens{\noexpand\makecell{Coursework \& Program Requirements} & \noexpand\makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=55\&poid=7381}{Computer Science}} \\ \noexpand\hline}
 
-\begin{tabularx}{\textwidth}{|l|X|}
+
+% 2021
+\eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{2021-2022} (archived) } \\ }
+\eAddTableTokens{\noexpand\makecell{Coursework \& Program Requirements} & \noexpand\makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=53\&poid=6994}{Computer Science}} \\ \noexpand\hline}
+
+% 2020
+\eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{2020-2021} (archived) } \\ }
+\eAddTableTokens{\noexpand\makecell{Coursework \& Program Requirements} & \noexpand\makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=50\&poid=6470}{Computer Science}} \\ \noexpand\hline}
+
+% 2019
+\eAddTableTokens{\noexpand\multicolumn{2}{l}{\noexpand\textbf{2019-2020} (archived) } \\ }
+\eAddTableTokens{\noexpand\makecell{Coursework \& Program Requirements} & \noexpand\makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=48\&poid=6159}{Computer Science}} \\ \noexpand\hline}
+
+
+\begin{tabularx}{\textwidth}{lX}
     \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=55\&poid=7381}{Computer Science}} \\ \hline
-\end{tabularx}
-
-\textbf{2021-2022} (archived)
-
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=53\&poid=6994}{Computer Science}} \\ \hline
-\end{tabularx}
-
-\textbf{2020-2021} (archived)
-
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=50\&poid=6470}{Computer Science}} \\ \hline
-\end{tabularx}
-
-\textbf{2019-2020} (archived)
-
-\begin{tabularx}{\textwidth}{|l|X|}
-    \hline
-        \textbf{Topic} & \textbf{Program Page Link} \\ \hline
-        \makecell{Coursework \& Program Requirements} & \makecell{\href{https://records.ureg.virginia.edu/preview_program.php?catoid=48\&poid=6159}{Computer Science}} \\ \hline
+    \textbf{Topic} & \textbf{Program Page Link} \\ \hline
+    \PrintTableTokens
 \end{tabularx}
 
 
